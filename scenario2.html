@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scenario: Kitchen - Small Kitchen Grease Fire</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /* scenario page styling */
+.scenario-page-container {
+    max-width: 800px; /* Limit page width for better readability */
+    margin: 20px auto; /* Center the container */
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+ header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+ header h1 {
+    font-size: 2.2em;
+    color: #007bff; /* Blue header color */
+    margin-bottom: 10px;
+}
+
+        /* Scenario Page Specific Styles */
+#scenario-content {
+    margin-top: 20px;
+}
+
+#situation {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    line-height: 1.6;
+}
+
+#decision-points {
+    margin-bottom: 20px;
+}
+
+.choice-button {
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: #28a745; /* Green button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.choice-button:hover {
+    background-color: #1e7e34; /* Darker green on hover */
+}
+
+#feedback-area {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e9ecef; /* Light gray feedback area */
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-style: italic;
+    color: #555;
+}
+
+#feedback-text {
+    margin: 0;
+}
+
+#next-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #007bff; /* Blue button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#next-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.scenario-ended {
+    /* Add styles for when the scenario ends, if needed */
+    padding: 20px;
+    background-color: #ffeeba; /* Light yellow for end message */
+    border: 1px solid #ffc107;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.restart-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #dc3545; /* Red button color for restart */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px; /* Add some space above the button */
+    transition: background-color 0.3s ease;
+}
+
+.restart-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.back-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #007bff; /* Blue button color for back */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px; /* Add some space above the button */
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/* Footer Styling */
+footer {
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background for footer */
+    color: #777; /* Muted text color for footer */
+    font-size: 0.9em;
+    border-top: 1px solid #ddd; /* Separator line above footer */
+    
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+footer ul li{
+    display: flex;
+    list-style: none;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="scenario-page-container">
+        <header>
+            <h1>Kitchen - Small Kitchen Grease Fire</h1>
+        </header>
+
+        <main id="scenario-content">
+            <div id="situation">
+                <p>Initial situation text will go here.</p>
+            </div>
+
+            <div id="decision-points">
+                </div>
+
+            <div id="feedback-area">
+                <p id="feedback-text"></p>
+            </div>
+
+            <button id="next-button" style="display: none;">Next</button>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 <b>Synttax Squad</b>.  Created for <b>GDG on Campus Solution Challenge</b></p>
+            <p>Team Members: 
+                <ul class="team-members">
+                    <li>Yashraj Rastogi</li>
+                    <li>Vanshika Saxena</li>
+                    <li>Ananya Yadav</li>
+                    <li>Vishesh Sachan</li>
+                </ul>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script> </body>
+</html>

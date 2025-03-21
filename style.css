@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+/* General Homepage Container Styles */
+.homepage-container {
+    text-align: center; /* Center align content within the container */
+    font-family: sans-serif;
+    padding: 20px; 
+    margin: 0px;
+    flex-direction: column;
+    background: rgb(233,251,2);
+    background: linear-gradient(90deg, rgba(233,251,2,1) 0%, rgba(242,152,5,1) 60%);
+}
+
+.heading {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+
+.heading .i {
+    height: 150px;
+    width: 240px;
+    margin-left: 0px;
+    border-radius: 20px;
+
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: bold;
+    font-family: "Tektur", sans-serif;
+    color:azure;
+}
+
+/* Intro Section Styling */
+.intro-section {
+    display: flex; /* Use flexbox for side-by-side image and text */
+    align-items: center; /* Vertically align items in the center */
+    margin-bottom: 30px; 
+    padding: 20px;
+    border: 1px solid #ddd; /* Optional: add a border to the intro section */
+    border-radius: 8px; /* Optional: rounded corners for intro section */
+}
+
+.intro-text {
+    flex: 1; /* Allow text to take up available space */
+    text-align: left; /* Left-align text within the text div */
+    padding: 0px 40px; /* Add some spacing between text and image */
+    font-weight: 400;
+    font-size: larger;
+    color: azure;
+}
+
+.intro-image {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    height:auto;
+    width: 340px; /* Set a fixed width for the intro image - adjust as needed */
+    margin-left: 20px; /* Space between text and image */
+}
+
+.intro-image img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain image aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for intro image */
+}
+
+ .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    padding: 20px;
+    border: 1px solid #ddd; /* Optional: add a border to the intro section */
+    border-radius: 8px; /* Optional: rounded corners for intro section */
+    /* background: rgb(233,251,2); */
+    background: linear-gradient(90deg, rgba(233,251,2,1) 0%, rgba(242,152,5,1) 60%);
+}
+.info .infoimg {
+    display: flex;
+    height: 150px;
+    width: 240px;
+    margin-left: 0px;
+    border-radius: 20px;
+}
+.info .infotext{
+    flex: 1; 
+    text-align: left; /* Left-align text within the text div */
+    padding: 0px 30px; /* Add some spacing between text and image */
+    font-weight: 400;
+    font-size: larger;
+    color: azure;
+}
+.info .infobtn{
+    top: 60%;        /* Adjust these values to position button on the "door" */
+    left: 50%;       /*  Experiment with top, left, transform to fine-tune positioning */
+    /* transform: translate(-50%, -50%); Center button precisely over the point */
+    padding: 12px 24px;
+    font-size: 1.1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10; /* Ensure button is above the image if needed */
+}
+
+/* Hotel Image and Button Section Styling */
+.hotel-button-section {
+    position: relative; /* Needed for absolute positioning of the button */
+    margin-bottom: 30px; /* Space below hotel section */
+}
+
+.hotel-image-container {
+    position: relative; /*  Needed for absolute positioning within this container */
+    display: inline-block; /* Make container wrap around the image */
+}
+
+.hotel-image-container img {
+    max-width: 100%; /* Hotel image width */
+    height: auto;
+    display: block; /* Remove extra space below image in some browsers */
+}
+
+#enter-scenario-button {
+    /* position: absolute; Position button relative to .hotel-image-container */
+    top: 60%;        /* Adjust these values to position button on the "door" */
+    left: 50%;       /*  Experiment with top, left, transform to fine-tune positioning */
+    transform: translate(-50%, -50%); /* Center button precisely over the point */
+    padding: 12px 24px;
+    font-size: 1.1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10; /* Ensure button is above the image if needed */
+}
+
+#enter-scenario-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Footer Styling */
+footer {
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background for footer */
+    color: #777; /* Muted text color for footer */
+    font-size: 0.9em;
+    border-top: 1px solid #ddd; /* Separator line above footer */
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+footer ul li{
+    display: flex;
+    list-style: none;
+}
+
+/* scenarios.html page container */
+.scenarios-page-container {
+    text-align: center; /* Center align content within the container */
+    font-family: sans-serif;
+    padding: 20px; 
+    margin: 0px;
+    flex-direction: column;
+    background: rgb(233,251,2);
+    background: linear-gradient(90deg, rgba(233,251,2,1) 0%, rgba(242,152,5,1) 60%);
+}
+
+/* Scenario Category Styling */
+.scenario-category {
+    margin-bottom: 30px; /* Spacing between categories */
+}
+
+.scenario-category h2 {
+    font-size: 52px;
+    font-weight: bold;
+    font-family: "Tektur", sans-serif;
+    color:azure;
+}
+
+/* Scenario List Styling */
+ .scenario-list {
+    list-style: none; /* Remove bullet points from list */
+    padding-left: 0;
+}
+
+.scenario-list li {
+    margin-bottom: 8px; /* Spacing between scenario list items */
+}
+
+.scenario-list li a {
+    display: block; /* Make link fill the entire list item width for easier clicking */
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline from links */
+    color: #333;
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+.scenario-list li a:hover {
+    background-color: #eee;
+}
+
